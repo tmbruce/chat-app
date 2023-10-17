@@ -61,7 +61,7 @@
 ### **Final Deliverables for Initial Planning and Setup:**
 - [x] Detailed Peoject Scope Document
 - [ ] Tech Stack Document.
-- [ ] Initialized Git repository.
+- [X] Initialized Git repository.
 - [ ] Initial project directory structure.
 - [ ] Basic React Native application.
 - [ ] Database Schema Design.
