@@ -51,6 +51,8 @@ The application is intended for individuals experiencing domestic abuse, with a 
 
 - Domestic abuse victims of all genders and ages.
 - Supportive friends, family members, or allies of victims seeking a secure channel of communication.
+- Whistleblowers
+- Persons under authoritarian regimes
 
 ## **Conclusion**
 
