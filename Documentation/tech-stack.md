@@ -167,4 +167,5 @@
 
 ## 10. Additional Tools and Libraries
 
-- List any additional tools, libraries, or packages used in the project.
+- Redux Toolkit
+- Jest

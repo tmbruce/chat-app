@@ -62,8 +62,8 @@
 - [x] Detailed Peoject Scope Document
 - [ ] Tech Stack Document.
 - [X] Initialized Git repository.
-- [ ] Initial project directory structure.
-- [ ] Basic React Native application.
+- [X] Initial project directory structure.
+- [X] Basic React Native application.
 - [ ] Database Schema Design.
 - [ ] Initialized Database.
 - [ ] Integrated Redux Toolkit.
