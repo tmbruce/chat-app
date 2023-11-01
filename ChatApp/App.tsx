@@ -4,6 +4,13 @@
  *
  * @format
  */
+const a = 1;
+const b = 2;
+// import RustModule from './RustNative';
+// let out = RustModule.addNumbers(a, b);
+// console.log(out);
+import RustModule from './RustNative';
+console.log(RustModule.addNumbers(1, 2));
 
 import React from 'react';
 import type {PropsWithChildren} from 'react';
