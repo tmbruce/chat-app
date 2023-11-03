@@ -1,15 +1,20 @@
 import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+
+import {StackParamList} from '../types/navigationTypes';
 
 import ThreadScreen from '../screens/ThreadScreen';
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<StackParamList>();
 
 const MainStackNavigator = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="ThreadScreen" component={ThreadScreen} />
-    </Stack.Navigator>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="ThreadScreen" component={ThreadScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
