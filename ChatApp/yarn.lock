@@ -1625,6 +1625,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@egjs/hammerjs@npm:^2.0.17":
+  version: 2.0.17
+  resolution: "@egjs/hammerjs@npm:2.0.17"
+  dependencies:
+    "@types/hammerjs": ^2.0.36
+  checksum: 8945137cec5837edd70af3f2e0ea621543eb0aa3b667e6269ec6485350f4d120c2434b37c7c30b1cf42a65275dd61c1f24626749c616696d3956ac0c008c4766
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -2446,9 +2455,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-navigation/native-stack@npm:^6.9.16":
-  version: 6.9.16
-  resolution: "@react-navigation/native-stack@npm:6.9.16"
+"@react-navigation/native-stack@npm:^6.9.17":
+  version: 6.9.17
+  resolution: "@react-navigation/native-stack@npm:6.9.17"
   dependencies:
     "@react-navigation/elements": ^1.3.21
     warn-once: ^0.1.0
@@ -2458,7 +2467,7 @@ __metadata:
     react-native: "*"
     react-native-safe-area-context: ">= 3.0.0"
     react-native-screens: ">= 3.0.0"
-  checksum: 7ca847ef2c7f45bf27159655cf4825427692c4a1539f6a6fb8eab6a627473fb6b4742d7ba93dd130ae96a602ebb3e77c541b70eff1532392cf413770dc3deb53
+  checksum: 6bb838b7ce19c521b1da12a147f78671259fb3921761f678d9b24d02f9e536428fffe82045ad66ef59dcd4920c1e5230b0d4aaba6f12a20726ffacfeba719f06
   languageName: node
   linkType: hard
 
@@ -2552,6 +2561,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@testing-library/react-native@npm:^12.3.2":
+  version: 12.3.2
+  resolution: "@testing-library/react-native@npm:12.3.2"
+  dependencies:
+    jest-matcher-utils: ^29.7.0
+    pretty-format: ^29.7.0
+    redent: ^3.0.0
+  peerDependencies:
+    jest: ">=28.0.0"
+    react: ">=16.8.0"
+    react-native: ">=0.59"
+    react-test-renderer: ">=16.8.0"
+  peerDependenciesMeta:
+    jest:
+      optional: true
+  checksum: c6fdaf64865a079b885ff83ae172330b354dbd13cb9a4370578a544080d87f21cc7a93e079a3bc4256ab0893c5de36feae4bcf6edf24b3a6617019f4369a6053
+  languageName: node
+  linkType: hard
+
 "@tsconfig/react-native@npm:^3.0.0":
   version: 3.0.2
   resolution: "@tsconfig/react-native@npm:3.0.2"
@@ -2609,6 +2637,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/hammerjs@npm:^2.0.36":
+  version: 2.0.43
+  resolution: "@types/hammerjs@npm:2.0.43"
+  checksum: 615cec30b780044d3f171bf981e7f747bba5a218d3b56d15e92f3733375597d1993233c4496a3603c8b4d838f3f435ecc3de75f09f6fd498fd144cc3f01c3a11
+  languageName: node
+  linkType: hard
+
 "@types/istanbul-lib-coverage@npm:*, @types/istanbul-lib-coverage@npm:^2.0.0, @types/istanbul-lib-coverage@npm:^2.0.1":
   version: 2.0.5
   resolution: "@types/istanbul-lib-coverage@npm:2.0.5"
@@ -2631,6 +2666,16 @@ __metadata:
   dependencies:
     "@types/istanbul-lib-report": "*"
   checksum: 21d007be7dd09165ed24f5cc9947319ad435fc3b3e568f3eec0a42ee80fd2adccdeb929bc1311efb2cf7597835638cde865d3630d8b4c15d1390c9527bcad1a9
+  languageName: node
+  linkType: hard
+
+"@types/jest@npm:^29.5.7":
+  version: 29.5.7
+  resolution: "@types/jest@npm:29.5.7"
+  dependencies:
+    expect: ^29.0.0
+    pretty-format: ^29.0.0
+  checksum: e28624ccb0ef1255a03fbbb4b5bc3e5cbcdc450d39e0739985ff679b124198f808c38c8c3e67859c6efc0e848196deeb8cfed028e12a821c511dfc1112a2d6e9
   languageName: node
   linkType: hard
 
@@ -2870,19 +2915,22 @@ __metadata:
     "@react-native/eslint-config": ^0.72.2
     "@react-native/metro-config": ^0.72.11
     "@react-navigation/native": ^6.1.9
-    "@react-navigation/native-stack": ^6.9.16
+    "@react-navigation/native-stack": ^6.9.17
     "@react-navigation/stack": ^6.3.20
+    "@testing-library/react-native": ^12.3.2
     "@tsconfig/react-native": ^3.0.0
+    "@types/jest": ^29.5.7
     "@types/react": ^18.0.24
     "@types/react-test-renderer": ^18.0.0
     babel-jest: ^29.2.1
     dotenv: ^16.3.1
     eslint: ^8.19.0
-    jest: ^29.2.1
+    jest: ^29.7.0
     metro-react-native-babel-preset: 0.76.8
     prettier: ^2.4.1
-    react: 18.2.0
+    react: ^18.2.0
     react-native: 0.72.6
+    react-native-gesture-handler: ^2.13.4
     react-native-safe-area-context: ^4.7.4
     react-native-screens: ^3.27.0
     react-test-renderer: 18.2.0
@@ -4635,7 +4683,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expect@npm:^29.7.0":
+"expect@npm:^29.0.0, expect@npm:^29.7.0":
   version: 29.7.0
   resolution: "expect@npm:29.7.0"
   dependencies:
@@ -5194,6 +5242,15 @@ __metadata:
   dependencies:
     source-map: ^0.7.3
   checksum: b5f874eaa65b70d88df7a4ce3b20d73312bb0bc73410f1b63d708f02e1c532ae16975da84e23b977eab8592ac95d7e6fc0c4094c78604fd0a092ed886c62aa7a
+  languageName: node
+  linkType: hard
+
+"hoist-non-react-statics@npm:^3.3.0":
+  version: 3.3.2
+  resolution: "hoist-non-react-statics@npm:3.3.2"
+  dependencies:
+    react-is: ^16.7.0
+  checksum: b1538270429b13901ee586aa44f4cc3ecd8831c061d06cb8322e50ea17b3f5ce4d0e2e66394761e6c8e152cd8c34fb3b4b690116c6ce2bd45b18c746516cb9e8
   languageName: node
   linkType: hard
 
@@ -6260,7 +6317,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:^29.2.1":
+"jest@npm:^29.7.0":
   version: 29.7.0
   resolution: "jest@npm:29.7.0"
   dependencies:
@@ -7048,6 +7105,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"min-indent@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "min-indent@npm:1.0.1"
+  checksum: bfc6dd03c5eaf623a4963ebd94d087f6f4bbbfd8c41329a7f09706b0cb66969c4ddd336abeb587bc44bc6f08e13bf90f0b374f9d71f9f01e04adc2cd6f083ef1
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:^3.0.2, minimatch@npm:^3.0.4, minimatch@npm:^3.0.5, minimatch@npm:^3.1.1, minimatch@npm:^3.1.2":
   version: 3.1.2
   resolution: "minimatch@npm:3.1.2"
@@ -7747,7 +7811,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^29.7.0":
+"pretty-format@npm:^29.0.0, pretty-format@npm:^29.7.0":
   version: 29.7.0
   resolution: "pretty-format@npm:29.7.0"
   dependencies:
@@ -7801,7 +7865,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:*, prop-types@npm:^15.8.1":
+"prop-types@npm:*, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -7887,7 +7951,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.13.0, react-is@npm:^16.13.1":
+"react-is@npm:^16.13.0, react-is@npm:^16.13.1, react-is@npm:^16.7.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
@@ -7898,6 +7962,22 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 9d6d111d8990dc98bc5402c1266a808b0459b5d54830bbea24c12d908b536df7883f268a7868cfaedde3dd9d4e0d574db456f84d2e6df9c4526f99bb4b5344d8
+  languageName: node
+  linkType: hard
+
+"react-native-gesture-handler@npm:^2.13.4":
+  version: 2.13.4
+  resolution: "react-native-gesture-handler@npm:2.13.4"
+  dependencies:
+    "@egjs/hammerjs": ^2.0.17
+    hoist-non-react-statics: ^3.3.0
+    invariant: ^2.2.4
+    lodash: ^4.17.21
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 32d704d16270eefedc596b198063943bd9d539e66605ae135550f70c551c6a0a060dfa9b973b651c47e845632d55a78f321245d979107d4f6669e788d4a6582d
   languageName: node
   linkType: hard
 
@@ -8004,7 +8084,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0":
+"react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -8055,6 +8135,16 @@ __metadata:
     source-map: ~0.6.1
     tslib: ^2.0.1
   checksum: 03cc7f57562238ba258d468be67bf7446ce7a707bc87a087891dad15afead46c36e9aaeedf2130e2ab5a465244a9c62bfd4127849761cf8f4085abe2f3e5f485
+  languageName: node
+  linkType: hard
+
+"redent@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "redent@npm:3.0.0"
+  dependencies:
+    indent-string: ^4.0.0
+    strip-indent: ^3.0.0
+  checksum: fa1ef20404a2d399235e83cc80bd55a956642e37dd197b4b612ba7327bf87fa32745aeb4a1634b2bab25467164ab4ed9c15be2c307923dd08b0fe7c52431ae6b
   languageName: node
   linkType: hard
 
@@ -8847,6 +8937,15 @@ __metadata:
   version: 2.0.0
   resolution: "strip-final-newline@npm:2.0.0"
   checksum: 69412b5e25731e1938184b5d489c32e340605bb611d6140344abc3421b7f3c6f9984b21dff296dfcf056681b82caa3bb4cc996a965ce37bcfad663e92eae9c64
+  languageName: node
+  linkType: hard
+
+"strip-indent@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "strip-indent@npm:3.0.0"
+  dependencies:
+    min-indent: ^1.0.0
+  checksum: 18f045d57d9d0d90cd16f72b2313d6364fd2cb4bf85b9f593523ad431c8720011a4d5f08b6591c9d580f446e78855c5334a30fb91aa1560f5d9f95ed1b4a0530
   languageName: node
   linkType: hard
 

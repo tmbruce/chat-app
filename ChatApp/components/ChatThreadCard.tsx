@@ -4,10 +4,10 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigation} from '../types/navigationTypes';
 
-import {ChatThreadCard} from '../types';
+import {ChatThreadCard as ChatThreadCardType} from '../types';
 
 interface Props {
-  chatThread: ChatThreadCard;
+  chatThread: ChatThreadCardType;
 }
 
 const ChatThreadCard: React.FC<Props> = ({chatThread}) => {
