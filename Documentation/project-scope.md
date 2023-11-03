@@ -35,7 +35,7 @@ The primary purpose of the application is to offer a secure communication platfo
 
 ### 3.4 Evidence Storage
 
-- Enable users to securely upload and store evidence of abuse, such as photos, videos, or audio recordings, ensuring that crucial information is preserved for legal purposes.
+- Enable users to securely upload and store evidence of abuse, such as photos, videos, notes, or audio recordings, ensuring that crucial information is preserved for legal purposes.
 
 ### 3.5 Resource Directory
 

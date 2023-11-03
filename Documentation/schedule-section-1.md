@@ -31,7 +31,7 @@
     - Define the data models and relationships
     - Choose the database system (e.g., SQLite, Firebase, etc.) and set up.
     - Plan database interactions.
-- **Deliverables::**
+- **Deliverables:**
     - Database Schema Design
     - Initialized Database.
 ### **Milestone 5: Implement Redux Toolkit and SQLite Integration**
@@ -40,7 +40,7 @@
     - Integrate SQLite for local data storage.
     - Implement initial actions and reducers.
 - **Deliverables:**
-    - Integraded Redux Toolkit.
+    - Integrated Redux Toolkit.
     - Implemented basic data management.
 ### **Milestone 6: Set up Navigation Structure**
 - **Goals:**
@@ -60,11 +60,11 @@
 ## **End of Section 2**
 ### **Final Deliverables for Initial Planning and Setup:**
 - [x] Detailed Peoject Scope Document
-- [ ] Tech Stack Document.
+- [X] Tech Stack Document.
 - [X] Initialized Git repository.
 - [X] Initial project directory structure.
 - [X] Basic React Native application.
-- [ ] Database Schema Design.
+- [X] Database Schema Design.
 - [ ] Initialized Database.
 - [ ] Integrated Redux Toolkit.
 - [ ] Implemented basic data management.

@@ -137,25 +137,21 @@
 
 ### 5.1 App Stores
 
-- Specify the app stores (e.g., Apple App Store, Google Play Store) where the application will be deployed.
-
-### 5.2 Hosting (if applicable)
-
-- If there's a backend server, describe where it will be hosted (e.g., AWS, Heroku, etc.).
+- This application will be deployed via Apple App Store and Google Play.
 
 ## 6. Version Control
 
-- Describe the version control system being used (e.g., Git) and any specific branching strategies.
+- Git and GitHub will be the tools of choice for version control. This project will utilize a feature branching strategy.
 
 ## 7. Testing
 
 ### 7.1 Unit Testing
 
-- Describe the unit testing framework and tools used for testing individual components.
+- Unit testing will be completed with react native testing library and jest. 
 
 ### 7.2 Integration Testing
 
-- Describe the tools and frameworks used for integration testing.
+- Integration testing will use Detox and Jest.
 
 ## 8. Continuous Integration/Continuous Deployment (CI/CD)
 
@@ -163,9 +159,20 @@
 
 ## 9. Development Environment
 
-- Describe the development environment setup (e.g., IDE, code editors, local development server, etc.).
+- This project will be developed locally using VS Code. 
 
 ## 10. Additional Tools and Libraries
 
+### JavaScript Libraries
 - Redux Toolkit
 - Jest
+- i18n
+- React Navigation
+- React Native vector icons
+- React Native Firebase
+- Protobuf.js
+  
+### Rust Libraries
+- Ring Cryptography
+- Protobuf
+- Rusqlite
