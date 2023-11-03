@@ -2,16 +2,13 @@ import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
 import {useNavigation} from '@react-navigation/native';
-import {StackNavigationProp} from '@react-navigation/stack';
+import {StackNavigation} from '../types/navigationTypes';
 
-import {StackParamList} from '../types/navigationTypes';
 import {ChatThreadCard} from '../types';
 
 interface Props {
   chatThread: ChatThreadCard;
 }
-
-export type StackNavigation = StackNavigationProp<StackParamList>;
 
 const ChatThreadCard: React.FC<Props> = ({chatThread}) => {
   const navigation = useNavigation<StackNavigation>();
