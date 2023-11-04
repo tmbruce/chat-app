@@ -1,14 +1,25 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {FlatList, SafeAreaView} from 'react-native';
+import {useSelector} from 'react-redux';
+import {RootState} from '../redux/store';
+
+import ChatThreadCard from '../components/ChatThreadCard';
+import {ChatThreadCard as ChatThreadCardType} from '../types';
 
 const Threads = () => {
+  const {threads} = useSelector((state: RootState) => state.threads);
+
   return (
-    <View>
-      <Text>Threads</Text>
-    </View>
+    <SafeAreaView>
+      <FlatList
+        data={threads}
+        keyExtractor={(item: ChatThreadCardType, _: number) =>
+          item.threadId.toString()
+        }
+        renderItem={({item}) => <ChatThreadCard chatThread={item} />}
+      />
+    </SafeAreaView>
   );
 };
 
 export default Threads;
-
-const styles = StyleSheet.create({});

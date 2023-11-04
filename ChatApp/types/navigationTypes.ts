@@ -5,6 +5,10 @@ export type StackParamList = {
     threadId: String;
     threadName: String;
   };
+  Threads: {
+    threadId: String;
+    threadName: String;
+  };
 };
 
 export type StackNavigation = StackNavigationProp<StackParamList>;

@@ -1,12 +1,10 @@
 import React from 'react';
-// import {createStackNavigator} from '@react-navigation/stack';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import {StackParamList} from '../types/navigationTypes';
 
-import ThreadScreen from '../screens/ThreadScreen';
+import Threads from '../screens/Threads';
 
-// const Stack = createStackNavigator<StackParamList>();
 const Stack = createNativeStackNavigator<StackParamList>();
 
 const MainStackNavigator = () => {
@@ -14,7 +12,7 @@ const MainStackNavigator = () => {
     <Stack.Navigator>
       <Stack.Screen
         name="ThreadScreen"
-        component={ThreadScreen}
+        component={Threads}
         options={{
           title: 'Messages',
           headerLargeTitle: true,

@@ -29,6 +29,7 @@ const ChatThreadCard: React.FC<Props> = ({chatThread}) => {
         <View>
           <Text style={styles.chatThreadContainer}>{chatThread.name}</Text>
           <Text>{chatThread.message}</Text>
+          <Text>{chatThread.date}</Text>
         </View>
       </TouchableOpacity>
     </View>
