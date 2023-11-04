@@ -2,12 +2,12 @@ import {StackNavigationProp} from '@react-navigation/stack';
 
 export type StackParamList = {
   ThreadScreen: {
-    threadId: String;
-    threadName: String;
+    threadId: string;
+    threadName: string;
   };
   Threads: {
-    threadId: String;
-    threadName: String;
+    threadId: string;
+    threadName: string;
   };
 };
 

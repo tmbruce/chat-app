@@ -18,8 +18,8 @@ const ChatThreadCard: React.FC<Props> = ({chatThread}) => {
       return;
     }
     navigation.navigate('ThreadScreen', {
-      threadId: chatThread.threadId,
-      threadName: chatThread.name,
+      threadId: chatThread.threadId as string,
+      threadName: chatThread.name as string,
     });
   };
 
