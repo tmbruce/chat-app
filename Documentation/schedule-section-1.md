@@ -66,8 +66,8 @@
 - [X] Basic React Native application.
 - [X] Database Schema Design.
 - [ ] Initialized Database.
-- [ ] Integrated Redux Toolkit.
+- [X] Integrated Redux Toolkit.
 - [ ] Implemented basic data management.
-- [ ] Initialized Navigation Structure.
+- [X] Initialized Navigation Structure.
 - [ ] UI/UX Wireframes or Mockups.
 - [ ] Design Guidelines Document.
