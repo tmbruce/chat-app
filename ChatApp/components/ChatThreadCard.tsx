@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
 import {useNavigation} from '@react-navigation/native';
-import {StackNavigation} from '../types/navigationTypes';
+import {StackNavigation} from '../types';
 
 import {ChatThreadCard as ChatThreadCardType} from '../types';
 
@@ -20,6 +20,7 @@ const ChatThreadCard: React.FC<Props> = ({chatThread}) => {
     navigation.navigate('ThreadScreen', {
       threadId: chatThread.threadId as string,
       threadName: chatThread.name as string,
+      message: chatThread.message as string,
     });
   };
 

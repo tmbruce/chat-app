@@ -1,12 +1,12 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {StackParamList} from '../types/navigationTypes';
+import {RootStackParamList} from '../types';
 
 import Threads from '../screens/Threads';
 import ThreadScreen from '../screens/ThreadScreen';
 
-const Stack = createNativeStackNavigator<StackParamList>();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const MainStackNavigator = () => {
   return (
@@ -23,7 +23,8 @@ const MainStackNavigator = () => {
         name="ThreadScreen"
         component={ThreadScreen}
         options={({route}) => ({
-          title: route.params.threadName,
+          headerTitle: route.params.threadName as string,
+          threadName: route.params.threadName as string,
         })}
       />
     </Stack.Navigator>

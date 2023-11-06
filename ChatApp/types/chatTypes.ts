@@ -5,3 +5,7 @@ export interface ChatThreadCard {
   messageRead: Boolean;
   threadId: String;
 }
+
+// export interface Thread {
+//   threadId: String;
+// }

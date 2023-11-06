@@ -8,7 +8,6 @@ import {ChatThreadCard as ChatThreadCardType} from '../types';
 
 const Threads = () => {
   const {threads} = useSelector((state: RootState) => state.threads);
-
   return (
     <SafeAreaView>
       <FlatList

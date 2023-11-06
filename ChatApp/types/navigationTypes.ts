@@ -1,9 +1,10 @@
-import {StackNavigationProp} from '@react-navigation/stack';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
-export type StackParamList = {
+export type RootStackParamList = {
   ThreadScreen: {
     threadId: string;
     threadName: string;
+    message: string;
   };
   Threads: {
     threadId: string;
@@ -11,4 +12,7 @@ export type StackParamList = {
   };
 };
 
-export type StackNavigation = StackNavigationProp<StackParamList>;
+export type StackNavigation = NativeStackNavigationProp<RootStackParamList>;
+
+// TODO
+// Modify ThreadScreen to reflect message architecture.
