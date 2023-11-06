@@ -7,7 +7,7 @@ type Props = NativeStackScreenProps<RootStackParamList, 'ThreadScreen'>;
 const ThreadScreen = ({route}: Props) => {
   return (
     <View>
-      <Text>{route.params.threadId}</Text>
+        <Text>{route.params.threadId}</Text>
         <Text>{route.params.message}</Text>
     </View>
   );
