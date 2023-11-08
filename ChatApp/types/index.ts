@@ -1,2 +1,2 @@
-export * from './chatTypes';
-export * from './navigationTypes';
+export * from './chat.type';
+export * from './navigation.type';
