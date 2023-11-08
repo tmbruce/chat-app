@@ -1,9 +1,9 @@
 export interface ChatThreadCard {
-  name: String;
-  message: String;
-  date: String;
-  messageRead: Boolean;
-  threadId: String;
+  name: string;
+  message: string;
+  date: string;
+  messageRead: boolean | number;
+  threadId: string;
 }
 
 // export interface Thread {

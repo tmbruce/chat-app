@@ -18,7 +18,7 @@ const initialState: ThreadsState = {
       name: 'Jane Doe',
       message: 'I am fine, thank you.',
       date: '11:33 AM',
-      messageRead: false,
+      messageRead: 5,
       threadId: '2',
     },
     {
@@ -26,7 +26,7 @@ const initialState: ThreadsState = {
       message:
         "Did you change your mind? I don't know if you did, but you sure should. I 'm just trying to take up some extra space to see overflow",
       date: '11:35 AM',
-      messageRead: false,
+      messageRead: 101,
       threadId: '3',
     },
     {

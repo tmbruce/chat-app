@@ -8,7 +8,8 @@ import {StackNavigation} from '../types';
 import {ChatThreadCard as ChatThreadCardType} from '../types';
 
 import UserAvatar from 'react-native-user-avatar';
-import window from '@react-navigation/native/lib/typescript/src/__mocks__/window';
+import Badge from './badge';
+
 interface Props {
   chatThread: ChatThreadCardType;
 }
@@ -34,6 +35,7 @@ const ChatThreadCard: React.FC<Props> = ({chatThread}) => {
       <View style={styles.chatThreadContainer}>
         <View style={styles.avatar}>
           <UserAvatar name={chatThread.name} size={60} bgColor="#AAA" />
+          <Badge read={chatThread.messageRead} />
         </View>
         <View style={styles.textContainer}>
           <View style={styles.dateName}>
@@ -89,25 +91,3 @@ const styles = StyleSheet.create({
 });
 
 export default ChatThreadCard;
-
-// <View>
-//   <TouchableOpacity onPress={navigateToThread}>
-//     <View style={styles.chatThreadContainer}>
-//       <View style={styles.avatar}></View>
-//       <View style={styles.timeSpacer}>
-//         <View style={styles.nameAndTime}>
-//           <Text style={styles.chatThreadName}>{chatThread.name}</Text>
-//           <Text>{chatThread.date}</Text>
-//         </View>
-//         <View style={styles.chatThreadMessage}>
-//           <Text
-//             style={styles.chatThreadMessage}
-//             numberOfLines={2}
-//             ellipsizeMode={'tail'}>
-//             {chatThread.message}
-//           </Text>
-//         </View>
-//       </View>
-//     </View>
-//   </TouchableOpacity>
-// </View>
