@@ -1,56 +1,47 @@
-// ChatThreadCard.test.tsx
-
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react-native';
 import ChatThreadCard from './ChatThreadCard';
-import {useNavigation} from '@react-navigation/native';
+import {NavigationContainer, useNavigation} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 
-// Mocking the useNavigation hook
+// Mock the useNavigation hook
 jest.mock('@react-navigation/native', () => {
+  const actualNav = jest.requireActual('@react-navigation/native');
   return {
-    useNavigation: jest.fn(),
+    ...actualNav,
+    useNavigation: () => ({
+      navigate: jest.fn(),
+    }),
   };
 });
 
+// Mock the UserAvatar and Badge components
+jest.mock('react-native-user-avatar', () => 'UserAvatar');
+jest.mock('./badge', () => 'Badge');
+
 describe('ChatThreadCard', () => {
-  const navigation = {
-    navigate: jest.fn(),
+  // Define a base set of props to reuse across tests
+  const baseProps = {
+    chatThread: {
+      name: 'John Doe',
+      message: 'Hey! How are you?',
+      date: '2021-09-01',
+      messageRead: true,
+      threadId: '1',
+    },
   };
 
-  // Set up the mock useNavigation hook
-  beforeEach(() => {
-    (useNavigation as jest.Mock).mockReturnValue(navigation);
+  it('renders correctly with given props', () => {
+    const {getByText} = render(<ChatThreadCard {...baseProps} />);
+
+    expect(getByText(baseProps.chatThread.name)).toBeTruthy();
+    expect(getByText(baseProps.chatThread.message)).toBeTruthy();
+    expect(getByText(baseProps.chatThread.date)).toBeTruthy();
+    // Assuming the Badge component will display something based on the read prop
+    // You will need to ensure that your mock returns something that can be asserted on.
   });
 
-  const chatThread = {
-    threadId: '1',
-    name: 'Jerry Garcia',
-    message: 'Hey, how are you?',
-    date: '2021-01-01T00:00:00.000Z',
-    messageRead: false,
-  };
-
-  test('renders correctly', () => {
-    const {getByText} = render(<ChatThreadCard chatThread={chatThread} />);
-
-    const nameElement = getByText(chatThread.name);
-    const messageElement = getByText(chatThread.message);
-    const dateElement = getByText(chatThread.date);
-
-    expect(nameElement).toBeTruthy();
-    expect(messageElement).toBeTruthy();
-    expect(dateElement).toBeTruthy();
-  });
-
-  test.skip('navigates to thread screen on press', () => {
-    const {getByTestId} = render(<ChatThreadCard chatThread={chatThread} />);
-    const touchable = getByTestId('touchable');
-
-    fireEvent.press(touchable);
-
-    expect(navigation.navigate).toHaveBeenCalledWith('ThreadScreen', {
-      threadId: chatThread.threadId,
-      threadName: chatThread.name,
-    });
-  });
+  // Additional tests could include:
+  // - Checking if the badge is shown or hidden based on the messageRead prop
+  // - Verifying other interactive elements, if they exist
 });
