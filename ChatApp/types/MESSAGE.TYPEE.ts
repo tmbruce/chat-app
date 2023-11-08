@@ -11,7 +11,7 @@ export interface AttachmentMetadata {
 export interface Attachment {
   type: 'image' | 'video' | 'audio';
   url: string;
-  metadata: AttachmentMetadata;
+  metadata?: AttachmentMetadata;
 }
 export interface Message {
   id: string;

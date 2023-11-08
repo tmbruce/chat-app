@@ -14,5 +14,4 @@ export type RootStackParamList = {
 
 export type StackNavigation = NativeStackNavigationProp<RootStackParamList>;
 
-// TODO
-// Modify ThreadScreen to reflect message architecture.
+// TODO: Modify RootStackParamList to reflect ts message type
