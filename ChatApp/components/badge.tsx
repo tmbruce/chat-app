@@ -6,37 +6,36 @@ interface BadgeProps {
 }
 
 const Badge: React.FC<BadgeProps> = ({read}) => {
+  if (read === true || read === 0) {
+    return null;
+  }
   return (
     <View>
-      {!read || typeof read === 'number' ? (
-        <View
+      <View
+        testID="badgeView"
+        style={{
+          position: 'absolute',
+          top: -62,
+          left: -1,
+          backgroundColor: '#007AFF',
+          borderRadius: 21 / 2,
+          borderColor: 'white',
+          borderWidth: 2,
+          width: 21,
+          height: 21,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <Text
+          testID="badgeText"
           style={{
-            position: 'absolute',
-            top: -62,
-            left: -1,
-            backgroundColor: '#007AFF',
-            borderRadius: 21 / 2,
-            borderColor: 'white',
-            borderWidth: 2,
-            width: 21,
-            height: 21,
-            justifyContent: 'center',
-            alignItems: 'center',
+            color: 'white',
+            fontSize: 9,
+            fontWeight: 'bold',
           }}>
-          <Text
-            style={{
-              color: 'white',
-              fontSize: 9,
-              fontWeight: 'bold',
-            }}>
-            {typeof read === 'number'
-              ? read && read > 99
-                ? '99'
-                : read
-              : null}
-          </Text>
-        </View>
-      ) : null}
+          {typeof read === 'number' ? (read && read > 99 ? '99' : read) : null}
+        </Text>
+      </View>
     </View>
   );
 };
