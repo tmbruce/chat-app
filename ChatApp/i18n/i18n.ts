@@ -10,7 +10,47 @@ const resources = {
   },
   es: {
     translation: {
-      welcome: 'Bienvenido a React',
+      messages: 'Mensajes',
+    },
+  },
+  zn: {
+    translation: {
+      messages: '消息',
+    },
+  },
+  fil: {
+    translation: {
+      messages: 'Mga Mensahe',
+    },
+  },
+  vi: {
+    translation: {
+      messages: 'Tin nhắn',
+    },
+  },
+  ar: {
+    translation: {
+      messages: 'رسائل',
+    },
+  },
+  fr: {
+    translation: {
+      messages: 'Messages',
+    },
+  },
+  ko: {
+    translation: {
+      messages: '메시지',
+    },
+  },
+  ru: {
+    translation: {
+      messages: 'Сообщения',
+    },
+  },
+  de: {
+    translation: {
+      messages: 'Nachrichten',
     },
   },
 };
