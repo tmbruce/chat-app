@@ -5,7 +5,7 @@ import LanguageDetector from 'i18next-react-native-language-detector';
 const resources = {
   en: {
     translation: {
-      messages: 'Messages',
+      messages: 'Messages!!!',
     },
   },
   es: {
@@ -59,9 +59,9 @@ i18n
   .use(LanguageDetector) // Detects language from the device
   .use(initReactI18next) // Passes i18n down to react-i18next
   .init({
+    compatibilityJSON: 'v3',
     resources,
     fallbackLng: 'en',
-    debug: true,
     interpolation: {
       escapeValue: false, // React already safes from xss
     },
